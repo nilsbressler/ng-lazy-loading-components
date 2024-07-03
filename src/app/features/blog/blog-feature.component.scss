@@ -1,0 +1,40 @@
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ce55f4;
+}
+
+.toolbar-button {
+  border: 1px solid #ce55f4;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+
+  &-icon {
+    font-size: 26px;
+  }
+}
+
+.blog_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+
+  &-description {
+    align-self: center;
+    padding: 15px;
+  }
+
+  &-posts {
+    align-self: center;
+    padding: 15px;
+
+    &_item {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid #ce55f4;
+      border-radius: 5px;
+    }
+  }
+}

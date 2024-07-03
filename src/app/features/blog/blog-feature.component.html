@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <button class="toolbar-button" (click)="requestBackToDashboard()">
+    <mat-icon class="toolbar-button-icon" fontIcon="arrow_back"></mat-icon>
+  </button>
+  <span>Blog Feature</span>
+</mat-toolbar>
+<div class="blog_container">
+  <div class="blog_container-description">
+    <h2>Check my newest posts</h2>
+  </div>
+  <div class="blog_container-posts">
+    <div class="blog_container-posts_item" *ngFor="let post of posts">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.content }}</p>
+    </div>
+  </div>
+</div>
